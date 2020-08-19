@@ -29,267 +29,181 @@
 
 <body>
   <header class="landing-header">
-    <nav class="nav" id="nav">
-      <div class="nav__img">
-        <img 
-          src="./img/afiaprime-logo.png" 
-          alt="afiaprime-logo"
-          class="nav__logo"
-        >
+    <nav id="nav" class="navbar">
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span>
       </div>
-
-      <div class="nav__links" id="myNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="nav-link-a">
-          <a href="#">Sign in</a>
-          <a href="#" class="sign-btn">Sign up</a>
-        </div>
+  
+      <div class="logo">
+          <a href="./index.html">
+            <img 
+              src="./img/afiaprime-logo.png" 
+              alt="afiaprime-logo"
+              class="nav__logo"
+            >
+          </a>
       </div>
-      <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
+      
+      <div class="search-icon">
+        <span class="fas fa-search"></span>
+      </div>
+      <div class="cancel-icon">
+        <span class="fas fa-times"></span>
+      </div>
+  
+      <div class="nav-items">
+        <li><a href="./signin.html">sign in</a></li>
+        <li><a href="./signup.html" class="sign-btn">Sign Up</a></li>
+      </div>
     </nav>
+
     <div class="seller-landing">
       <div class="seller-hero-txt">
         <h2>Become a seller</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique vestibulum odio elementum cras ipsum suspendisse.
         </p>
-        <a href="./signup.html">Become an Agent</a>
+        <a href="./signup.html">Open a shop</a>
       </div>
+    </div>
+
+    <div class="seller-img">
+      <img src="./img/seller.png" alt="seller illustration">
     </div>
   </header>
 
-  <div class="product-container">
-    <div class="row-container">
-      <section class="row">
-        <div class="title-row">
-          <div class="main-title">
-            <h2>Most Bought Products</h2>
-          </div>
+  <section class="seller-method">
+    <h2>Subscription Method</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique vestibulum odio elementum cras ipsum suspendisse</p>
+  </section>
+
+  <section class="seller-card">
+    <div class="seller-sub">
+      <div class="seller-type">
+        <div class="sub-type">
+          <img src="./img/regular.png" alt="">
+          <h4>Regular</h4>
         </div>
-        <div class="product-row">
-          <div class="products">
-            <img src="./img/electronics.jpg" alt="afiaprime electronics" class="product-img">
-            <div class="product-info">
-              <h3>Electronics</h3>
-              <a href="#">View more</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="./img/beauty.jpg" alt="afiaprime health & beauty" class="product-img">
-            <div class="product-info">
-              <h3>Health & Beauty</h3>
-              <a href="#">Explore now</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="./img/laptops.jpg" alt="afiaprime laptops" class="product-img">
-            <div class="product-info">
-              <h3>Laptops</h3>
-              <a href="#">Buy now</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="gender-clothing">
-        <div class="title-row">
-          <div class="main-title">
-            <h2>Women Clothings</h2>
-          </div>
-        </div>
-        <div class="cloth-row">
-          <div class="cloth">
-            <img src="./img/women-skirt.png" alt="afiaprime skirt" class="cloth-img">
-            <div class="cloth-product-info">
-              <a href="#">Explore now</a>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </div>
-          <div class="cloth">
-            <img src="./img/women-shoe.jpg" alt="afiaprime shoe" class="cloth-img">
-            <div class="cloth-product-info">
-              <a href="#">Explore now</a>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </div>
-          <div class="cloth">
-            <img src="./img/women-short.jpg" alt="afiaprime shorts" class="cloth-img">
-            <div class="cloth-product-info">
-              <a href="#">Explore now</a>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-          </div>
-          <div class="cloth">
-            <img src="./img/women-overall.jpg" alt="afiaprime shorts" class="cloth-img">
-            <div class="cloth-product-info">
-              <a href="#">Explore now</a>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </div>
-          <div class="cloth">
-            <img src="./img/women-bra.png" alt="afiaprime bra" class="cloth-img">
-            <div class="cloth-product-info">
-              <a href="#">Explore now</a>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="gender-clothing">
-      <div class="title-row">
-        <div class="main-title">
-          <h2>Men Clothings</h2>
-        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
       </div>
-      <div class="cloth-row">
-        <div class="cloth">
-          <img src="./img/men-suite.jpg" alt="afiaprime skirt" class="cloth-img">
-          <div class="cloth-product-info">
-            <a href="#">Explore now</a>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </div>
-        </div>
-        <div class="cloth">
-          <img src="./img/men shoe.jpg" alt="afiaprime shoe" class="cloth-img">
-          <div class="cloth-product-info">
-            <a href="#">Explore now</a>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </div>
-        </div>
-        <div class="cloth">
-          <img src="./img/men-shirt.jpg" alt="afiaprime shorts" class="cloth-img">
-          <div class="cloth-product-info">
-            <a href="#">Explore now</a>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-        </div>
-        <div class="cloth">
-          <img src="./img/men-shirt.png" alt="afiaprime shorts" class="cloth-img">
-          <div class="cloth-product-info">
-            <a href="#">Explore now</a>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </div>
-        </div>
-        <div class="cloth">
-          <img src="./img/black-shoe.png" alt="afiaprime bra" class="cloth-img">
-          <div class="cloth-product-info">
-            <a href="#">Explore now</a>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-        </div>
+      <div class="sub-amt">
+        <h4>$15</h4>
+        <a href="#">Subscribe now</a>
       </div>
     </div>
-    <div class="row-container">
-      <section class="row">
-        <div class="title-row">
-          <div class="main-title">
-            <h2>Categories</h2>
-          </div>
+    <div class="seller-sub">
+      <div class="seller-type">
+        <div class="sub-type">
+          <img src="./img/standard.png" alt="standard">
+          <h4>Standard</h4>
         </div>
-        <div class="product-row">
-          <div class="products">
-            <img src="./img/beautycare.jpg" alt="afiaprime beauty care" class="product-img">
-            <div class="product-info">
-              <h3>Beauty Care Product</h3>
-              <a href="#">View more</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="./img/toys.jpg" alt="afiaprime toys" class="product-img">
-            <div class="product-info">
-              <h3>Favorite Toys</h3>
-              <a href="#">Explore now</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="./img/kitchen.jpg" alt="afiaprime kitchen utensils" class="product-img">
-            <div class="product-info">
-              <h3>Kitchen utensils</h3>
-              <a href="#">Buy now</a>
-            </div>
-          </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+      </div>
+      <div class="sub-amt">
+        <h4>$25</h4>
+        <a href="#">Subscribe now</a>
+      </div>
+    </div>
+    <div class="seller-sub">
+      <div class="seller-type">
+        <div class="sub-type">
+          <img src="./img/premium.png" alt="premium">
+          <h4>Premium</h4>
         </div>
-      </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+      </div>
+      <div class="sub-amt">
+        <h4>$40</h4>
+        <a href="#">Subscribe now</a>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="meet-agents">
-    <div class="agent-txt">
-      <h2>Meet With Our Agents</h2>
-      <p>
-        lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Tristique vestibulum odio elementum cras ipsum suspendisse.
-      </p>
-      <a href="./agent-signup.html">Become an Agent</a>
+  <section class="steps">
+    <div class="how">
+      <h2>How it Works</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique vestibulum odio elementum cras ipsum suspendisse</p>
     </div>
-    <div class="illustration">
-      <img src="./img/group-chat.png" alt="group chat" class="illustration-img">
-    </div>
-  </div>
+    <div class="steps-card">
+      <div class="step-sub">
+        <div class="step-type">
+          <div class="sub-type">
+            <img src="./img/openshop.png" alt="">
+            <h4>1. Open A Shop </h4>
+          </div>
+          <p>Sign up for free, set up your store, and offer your work to our global audience.</p>
+        </div>
+      </div>
+      <div class="step-sub">
+        <div class="step-type">
+          <div class="sub-type">
+            <img src="./img/subscribeplan.png" alt="subscribe">
+            <h4>2. Subcribe For A Plan </h4>
+          </div>
+          <p>Choose a plan to be able to develop a store</p>
+        </div>
+      </div>
+      <div class="step-sub">
+        <div class="step-type">
+          <div class="sub-type">
+            <img src="./img/uploadproduct.png" alt="">
+            <h4>3. Upload Product</h4>
+          </div>
+          <p>Upload pictures of products for sale so customers can see</p>
+        </div>
+      </div>
+      <div class="step-sub">
+        <div class="step-type">
+          <div class="sub-type">
+            <img src="./img/getpaid.png" alt="">
+            <h4>4. Get Paid</h4>
+          </div>
+          <p>Customers get to buy your products and you get paid</p>
+        </div>
+      </div>
+  </section>
 
-<footer>
-  <div class="footer-container">
-    <div class="footer-links">
-      <a href="#">Sell products on Afiaprime</a>
-      <a href="#">Chat with an Agent</a>
-      <a href="#">Ratings</a>
-      <a href="#">Advertise Products</a>
-      <a href="#">About us</a>
-      <a href="#">Contact us</a>
-    </div>
-    <div class="footer-links">
-      <a href="#">Blogs</a>
-      <a href="#">Careers</a>
-      <a href="#">Help and Support</a>
-      <a href="#">Your Account</a>
-      <a href="#">Your Orders</a>
-      <a href="#">Replacements</a>
-    </div>
-    <div class="footer-links" >
-      <a href="#">Terms</a>
-      <a href="#">Privacy and policy</a>
-      <a href="#">Map</a>
-    </div>
-  </div>
-  <div class="copyright">
-    <div>
-      ©<span id="copyyear"></span>, Afiaprime.com All rights reserved.
-    </div>
-    <div>
-      <a href="#">Privacy and Terms policy</a>
-    </div>
-  </div>
-</footer>
+  <section class="openstore">
+    <h2>Open A Store Now!!!</h2>
+    <p>More than 300 million customers worldwide are waiting to see your Products</p>
+    <a href="#">Sign Up</a>
+  </section>
 
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="#">Sell products on Afiaprime</a>
+        <a href="#">Chat with an Agent</a>
+        <a href="#">Ratings</a>
+        <a href="#">Advertise Products</a>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Blogs</a>
+        <a href="#">Careers</a>
+        <a href="#">Help and Support</a>
+        <a href="#">Your Account</a>
+        <a href="#">Your Orders</a>
+        <a href="#">Replacements</a>
+      </div>
+      <div class="footer-links" >
+        <a href="#">Terms</a>
+        <a href="#">Privacy and policy</a>
+        <a href="#">Map</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <div>
+        ©<span id="copyyear"></span>Afiaprime.com All rights reserved.
+      </div>
+      <div>
+        <a href="#">Privacy and Terms policy</a>
+      </div>
+    </div>
+  </footer>
 
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

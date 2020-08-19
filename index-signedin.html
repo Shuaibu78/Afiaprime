@@ -29,35 +29,39 @@
 
 <body>
   <header class="landing-header">
-    <nav class="nav" id="nav">
-      <div class="nav__img">
+    <nav id="nav">
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+      </div>
+      <div class="logo">
         <img 
           src="./img/afiaprime-logo.png" 
           alt="afiaprime-logo"
           class="nav__logo"
         >
+
         <img 
-          src="./img/cart.png" 
-          alt="afiaprime-cart-icon"
-          class="nav__cart"
-        >
+        src="./img/cart.png" 
+        alt="afiaprime-cart-icon"
+        class="nav__cart"
+      >
       </div>
-
-      <div class="search-container">
-          <input type="text" placeholder="Search for items, trends, gadgets" name="search" class="nav__searchInput">
-          <i class="fa fa-search"></i>
+      <form action="#">
+        <input type="search" class="search-data" placeholder="Search for items. trends, gadgets" required>
+        <button type="submit" class="fas fa-search"></button>
+      </form>
+      <div class="search-icon">
+        <span class="fas fa-search"></span>
       </div>
-
-        <div class="nav__links" id="myNav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="nav-link-a">
-            <a href="#">Sell</a>
-            <a href="#">Agent</a>
-            <a href="#">Vendor</a>
-            <a href="#" class="sign-btn">Sign in</a>
-          </div>
-        </div>
-        <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
+      <div class="cancel-icon">
+        <span class="fas fa-times"></span>
+      </div>
+      <div class="nav-items">
+        <li><a href="#">Sell</a></li>
+        <li><a href="#">Agent</a></li>
+        <li><a href="#">Vendor</a></li>
+        <li><a href="#" class="sign-btn">Sign in</a></li>
+      </div>
     </nav>
     <div class="landing">
       <div class="hero-txt">
@@ -288,7 +292,7 @@
     </div>
   </div>
   <div class="copyright">
-    <div>
+    <div class="cpdiv">
       ©<span id="copyyear"></span>, Afiaprime.com All rights reserved.
     </div>
     <div>
