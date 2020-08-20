@@ -1873,7 +1873,7 @@ and (max-device-width: 425px) {
 	}
 	
 	.nav__logo {
-		width: 200px;
+		width: 150px;
 	}
 
   nav .nav-items{
@@ -1933,7 +1933,7 @@ nav .search-icon span {
   nav form{
     position: absolute;
     top: 80px;
-    right: 50px;
+    right: 10px;
     opacity: 0;
     pointer-events: none;
     transition: top 0.3s ease, opacity 0.1s ease;
@@ -2250,7 +2250,7 @@ nav .search-icon span {
 footer {
 	display: flex;
 	flex-direction: column;
-	height: 356px;
+	height: 756px;
 }
 
 .footer-container {
@@ -2476,7 +2476,7 @@ footer {
 }
 
 .xnav span {
-	color: #000000 !importanti;
+	color: #000000 !important;
 }
 
 .seller-method h2 {
@@ -2651,7 +2651,7 @@ footer {
 	height: 350px;
 	align-items: center;
 	flex-direction: column;
-	padding: 2rem 0 10rem;
+	padding: 2rem 40px 10rem;
 }
 
 .openstore h2 {
@@ -2659,7 +2659,7 @@ footer {
 	font-family: Nunito Sans;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 38px;
+	font-size: 28px;
 	line-height: 80px;
 	text-align: center;
 	color: #2E2E2E;
