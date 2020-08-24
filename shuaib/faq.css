@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+section.hero-faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.hero-faq h2 {
+    font-size: 32px;
+    padding-bottom: 20px;
+    width:80%;
+    text-align:center;
+}
+
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.faq-tabs{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.faq-tabs a{
+   text-decoration: none;
+   color:#1f7ebd;
+   font-weight: bold;
+   margin-bottom: 120px;
+}
+
+.faq-tabs a:active{
+    
+    color:#000000;
+    text-decoration: none;
+border-bottom:4px solid #006bb3;
+   
+ }
+
+ .faq-content{
+     display: grid;
+     grid-template-columns: 1fr  1fr;
+    grid-column-gap: 10%;
+    
+    
+ }
+
+ .faq-content div{
+     display: flex;
+     flex-direction: column;
+     
+ } 
+
+
+ 
+ 
+
+
+
+
+ .faq-content h2{
+     font-size: 18px;
+     line-height: 1.2rem;
+     padding-bottom: 13px;
+ }
+
+ .faq-content p{
+     
+    font-size: 15px;
+    line-height: 1.1rem;
+    width: 74%;
+    font-weight: 500;
+}
+
+span.read-more{
+    color: rgb(179, 179, 179);
+}
+
+.load-more{
+    border: 2px solid;
+    color: #006bb3;
+    border-radius: 30px;
+    padding: 13px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+
+
+
+
+/* MEDIA QUERIES FOR MOBILE OPTIMIZATION */
+
+
+
+
+
+
+@media only screen and (max-width: 510px) {
+  
+
+
+section.hero-faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.faq-tabs{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-bottom: 40px;
+    
+    
+}
+
+.faq-tabs a{
+    text-decoration: none;
+    color:#1f7ebd;
+    font-weight: bold;
+    margin-bottom: 12px;
+ }
+
+ .hero-faq h2 {
+    font-size: 27px;
+    
+}
+
+}
+
+
+
+@media only screen and (max-width: 360px) {
+   
+   
+
+    .hero-faq h2 {
+        font-size: 22px;
+        
+    }
+
+    .faq-content h2{
+        font-size: 14px;
+        line-height: 1.2rem;
+        padding-bottom: 13px;
+    }
+   
+    .faq-content p{
+        
+       font-size: 12px;
+       line-height: 1.1rem;
+       width: 90%;
+       font-weight: 500;
+   }
+
+
+}
