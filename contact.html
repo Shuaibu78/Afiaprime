@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Contact us page</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,51 +12,35 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <!-- google font and font-awesome CDN-->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-  
+  <!-- <link rel="stylesheet" href="blog.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <!-- Place favicon.ico in the root directory -->
 
- 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="checkout-body">
+<body>
   <nav id="nav" class="navbar">
     <div class="menu-icon">
       <span class="fas fa-bars"></span>
     </div>
 
     <div class="logo">
-      <img 
-        src="./img/afiaprime-logo.png" 
-        alt="afiaprime-logo"
-        class="nav__logo"
-      >
-      <li class="hiddenliitems" >
-        <a href="#">
-          <img 
-            src="./img/cart.png" 
-            alt="afiaprime-cart-icon"
-            class="nav__cart"
-          >
-        </a>
+      <a href="./index.html">
+        <img src="./img/afiaprime-logo.png" alt="afiaprime-logo" class="nav__logo">
+      </a>
     </div>
 
-    <div class="formSearch">
-      <form action="#">
-        <input type="search" class="search-data" placeholder="Search for items. trends, gadgets">
-        <button type="submit" class="fas fa-search"></button>
-      </form>
-      <li><a class="hiddenli" href="#">FAQ</a></li>
-    </div>
-    
     <div class="search-icon">
       <span class="fas fa-search"></span>
     </div>
@@ -65,54 +49,79 @@
     </div>
 
     <div class="nav-items">
-      <li><a class="hiddenliitems" href="#">FAQ</a></li>
-      <li>
-        <a class="hiddenli" href="#">
-          <img 
-            src="./img/cart.png" 
-            alt="afiaprime-cart-icon"
-            class="nav__cart"
-          >
-        </a>
-      </li>
-      <li><a href="#">Cart:0</a></li>
-      <li><a href="#" class="sign-btn">Sign in</a></li>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./signin.html">sign In</a></li>
+      <li><a href="./signup.html" class="sign-btn">Sign Up</a></li>
     </div>
   </nav>
 
-  <div class="contactus">
-    <h1 class="contactus-title">
-      Contact Us
-    </h1>
-    <div class="contactus-p">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique vestibulum odio elementum cras ipsum suspendisse.</p>
-    </div>
-  </div>
+  <!--  hero-->
+  <section class="hero">
+    <h2>Contact Us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo officia. elit. Sequi explicabo
+      officia. explicabo officia. explicabo officia.
+    </p>
+  </section>
 
-  <div class="contactus-faq">
-    <div class="ct-faq-p">
-      <p>Find the most frequently asked questions here</p>
+  <!--  Manage order FAQ section-->
+  <section class="manage-orders">
+    <span>Find The Most Frequently Asked Questions Here</span>
+    <div class="faq-btns">
+      <a href="#">Track My Order</a>
+      <a href="#">Cancel My Order</a>
+      <a href="#">Return My Order</a>
+      <a href="#">Payment issues</a>
     </div>
-    <div class="ct-faq-cards">
-      <div class="ct-faq-track">
-        <h4>Track my order</h4>
+
+
+
+  </section>
+
+  <!--  Form-->
+  <section class="form-section">
+    <div class="form-description">
+      <h3>Didn't Find What You are looking For,<br> Still Need Help?</h3>
+      <p>Send us a reuqest using the online form below and we will get back to you within 24 - 48 business hours.
+      </p>
+    </div>
+
+    <form id="get-back">
+      <div class="name-group">
+        <input placeholder="Enter Your Name" type="text">
+        <input placeholder="Enter Your Email" type="text">
       </div>
-      <div class="ct-faq-cards">
-        <div class="ct-faq-return">
-          <h4>Return my order</h4>
-        </div>
-        <div class="ct-faq-cards">
-          <div class="ct-faq-returns">
-            <h4>Cancel my order</h4>
-          </div>
-        </div>
-        <div class="ct-faq-cards">
-          <div class="ct-faq-payment">
-            <h4>h4>Payment issue</h4>
-          </div>
-        </div>
+      <input style="margin-top: 20px;" placeholder="Enter Your 8-digit Order Number (e.g 0234567)" type="text">
+
+      <div class="subject">
+        <label for="subject">Subject*</label>
+        <select name="subject" id="options-group">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+
+      <textarea placeholder="Give full details of your contact reasons here" name="" id="" cols="30"
+        rows="10"></textarea>
+
+      <button>Submit</button>
+
+
+    </form>
+  </section>
+
+  <!--  Extra Functionality-->
+  <section class="extra-section">
+    <div class="customer-support">
+      <h3>Customer Support</h3>
+      <!-- BOX FROM Ui -->
     </div>
-  </div>
+
+    <div class="place-order">
+      <h3>Placing an Order</h3>
+      <!-- BOX FROM Ui -->
+    </div>
+  </section>
 
   <footer>
     <div class="footer-container">
@@ -132,14 +141,14 @@
         <a href="#">Your Orders</a>
         <a href="#">Replacements</a>
       </div>
-      <div class="footer-links" >
+      <div class="footer-links">
         <a href="#">Terms</a>
         <a href="#">Privacy and policy</a>
         <a href="#">Map</a>
       </div>
     </div>
     <div class="copyright">
-      <div class="cpdiv">
+      <div>
         ©<span id="copyyear"></span>, Afiaprime.com All rights reserved.
       </div>
       <div>
@@ -149,7 +158,8 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
 </body>
 
 </html>

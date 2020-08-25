@@ -5,7 +5,11 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'poppins', sans-serif;
+}
+
+nav {
+    height: 75px !important;
 }
 
 section.hero-faq {
@@ -104,70 +108,13 @@ span.read-more {
     margin-bottom: 70px;
 }
 
-/* MEDIA QUERIES FOR MOBILE OPTIMIZATION */
-
-@media only screen and (max-width: 510px) {
-    section.hero-faq {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-    }
-    .faq-tabs {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        margin-bottom: 40px;
-    }
-    .faq-tabs a {
-        text-decoration: none;
-        color: #1f7ebd;
-        font-weight: bold;
-        margin-bottom: 12px;
-    }
-    .hero-faq h2 {
-        font-size: 27px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .hero-faq h2 {
-        font-size: 22px;
-    }
-    .faq-content h2 {
-        font-size: 14px;
-        line-height: 1.2rem;
-        padding-bottom: 13px;
-    }
-    .faq-content p {
-        font-size: 12px;
-        line-height: 1.1rem;
-        width: 90%;
-        font-weight: 500;
-    }
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* Start of Navbar Css */
-
-/* End of Navbar Css */
-
 section.blog-hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100px;
+    margin-top: 5rem;
     background: #fbfdff;
 }
 
@@ -186,7 +133,7 @@ section.blog-hero {
     width: 90vw;
     margin: auto;
     grid-gap: 120px;
-    margin-top: 35px;
+    margin-top: 10rem;
 }
 
 .sidebar-container {
@@ -473,7 +420,9 @@ section.comment-form-container {
     width: 90vw;
     margin: auto;
     margin-top: 35px;
+    margin-bottom: 35px;
     display: flex;
+    height: 750px;
     flex-direction: column;
 }
 
@@ -552,63 +501,6 @@ form#comment-form button:hover {
 button:focus {
     outline: none;
 }
-
-/* MEDIA QUERIES FOR MOBILE OPTIMIZATION */
-
-@media only screen and (max-width: 360px) {}
-
-@media only screen and (max-width: 936px) {
-    .post-content h3 {
-        font-size: 30px;
-    }
-    .latest-box h4, .related-box h4 {
-        font-size: 20.5px;
-    }
-    .related-box a, .latest-box a {
-        font-size: 14px;
-        line-height: 1.4rem;
-        letter-spacing: 1.3px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .blog-container {
-        grid-template-columns: 1fr;
-    }
-    .post-content img {
-        width: 100%;
-    }
-    .related-box h4 {
-        font-size: 25.5px;
-        letter-spacing: 2px;
-    }
-    a.related-post {
-        font-size: 17px;
-        line-height: 2rem;
-        letter-spacing: 1px;
-    }
-    .latest-box h4 {
-        font-size: 25.5px;
-        letter-spacing: 1px;
-    }
-    .latest-box a {
-        font-size: 17px;
-    }
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* Start of Navbar Css */
-
-/* End of Navbar Css */
 
 section.blog-hero {
     display: flex;
@@ -732,114 +624,6 @@ a.cta-btn:hover {
     background-color: #239cec;
 }
 
-/* MEDIA QUERIES FOR MOBILE OPTIMIZATION */
-
-@media only screen and (max-width: 600px) {
-    .cta-banner img {
-        width: 100%;
-    }
-    .cta-banner div {
-        padding-top: 15px;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 360px) {}
-
-@media only screen and (max-width: 600px) {
-    div.faq-btns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 3rem 2rem;
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    div.faq-btns a {
-        font-size: 14px;
-    }
-    div.faq-btns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 3rem 2rem;
-        width: 80%;
-    }
-    .extra-section {
-        font-size: 20px;
-    }
-    section.form-section {
-        margin-top: 30px;
-    }
-    .hero p {
-        width: 90%;
-    }
-    div.faq-btns a {
-        font-size: 14px;
-    }
-    div.faq-btns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 3rem 2rem;
-        width: 80%;
-    }
-    form#get-back input, form#get-back select, form#get-back textarea, form#get-back option {
-        font-size: 12px !important;
-    }
-    div.form-description {
-        width: 100%;
-    }
-    .form-description h3 {
-        font-size: 17px;
-        width: 90%;
-    }
-    .form-description p {
-        font-size: 12px;
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    form#get-back button {
-        font-size: 13px;
-    }
-    .manage-orders {
-        margin-top: 70px;
-    }
-    div.faq-btns {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 3rem 9rem;
-        width: 80%;
-        margin-bottom: 180px;
-        margin-top: 40px;
-    }
-    form#get-back input, form#get-back select, form#get-back textarea, form#get-back option {
-        font-size: 10px !important;
-    }
-    div.form-description {
-        width: 100%;
-    }
-    .form-description h3 {
-        font-size: 15px;
-        width: 87vw;
-    }
-    .form-description p {
-        font-size: 12px;
-        width: 90%;
-        ;
-    }
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 section.hero {
     display: flex;
@@ -1029,4 +813,178 @@ button:focus {
     height: 350px;
     font-size: 30px;
     text-align: center;
+}
+
+/* MEDIA QUERIES FOR MOBILE OPTIMIZATION */
+
+@media only screen and (max-width: 936px) {
+    .post-content h3 {
+        font-size: 30px;
+    }
+    .latest-box h4, .related-box h4 {
+        font-size: 20.5px;
+    }
+    .related-box a, .latest-box a {
+        font-size: 14px;
+        line-height: 1.4rem;
+        letter-spacing: 1.3px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+    .post-content img {
+        width: 100%;
+    }
+    .related-box h4 {
+        font-size: 25.5px;
+        letter-spacing: 2px;
+    }
+    a.related-post {
+        font-size: 17px;
+        line-height: 2rem;
+        letter-spacing: 1px;
+    }
+    .latest-box h4 {
+        font-size: 25.5px;
+        letter-spacing: 1px;
+    }
+    .latest-box a {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    div.faq-btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem 2rem;
+        width: 80%;
+    }
+
+    .cta-banner img {
+        width: 100%;
+    }
+    .cta-banner div {
+        padding-top: 15px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    section.hero-faq {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+    .faq-tabs {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-bottom: 40px;
+    }
+    .faq-tabs a {
+        text-decoration: none;
+        color: #1f7ebd;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+    .hero-faq h2 {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    div.faq-btns a {
+        font-size: 14px;
+    }
+    div.faq-btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem 2rem;
+        width: 80%;
+    }
+    .extra-section {
+        font-size: 20px;
+    }
+    section.form-section {
+        margin-top: 30px;
+    }
+    .hero p {
+        width: 90%;
+    }
+    div.faq-btns a {
+        font-size: 14px;
+    }
+    div.faq-btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem 2rem;
+        width: 80%;
+    }
+    form#get-back input, form#get-back select, form#get-back textarea, form#get-back option {
+        font-size: 12px !important;
+    }
+    div.form-description {
+        width: 100%;
+    }
+    .form-description h3 {
+        font-size: 17px;
+        width: 90%;
+    }
+    .form-description p {
+        font-size: 12px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .hero-faq h2 {
+        font-size: 22px;
+    }
+    .faq-content h2 {
+        font-size: 14px;
+        line-height: 1.2rem;
+        padding-bottom: 13px;
+    }
+    .faq-content p {
+        font-size: 12px;
+        line-height: 1.1rem;
+        width: 90%;
+        font-weight: 500;
+    }
+    form#get-back button {
+        font-size: 13px;
+    }
+    .manage-orders {
+        margin-top: 70px;
+    }
+    div.faq-btns {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3rem 9rem;
+        width: 80%;
+        margin-bottom: 180px;
+        margin-top: 40px;
+    }
+    form#get-back input, form#get-back select, form#get-back textarea, form#get-back option {
+        font-size: 10px !important;
+    }
+    div.form-description {
+        width: 100%;
+    }
+    .form-description h3 {
+        font-size: 15px;
+        width: 87vw;
+    }
+    .form-description p {
+        font-size: 12px;
+        width: 90%;
+        ;
+    }
 }
