@@ -1034,6 +1034,7 @@ footer {
 	position: relative;
 	text-align: center;
 	margin-bottom: 100px;
+	height: 1040px
 }
 .agent-hero-img img {
 	padding-top: 15px;
@@ -2853,12 +2854,13 @@ footer {
 .agent-hero-img {
 	position: relative;
 	text-align: center;
-	margin-bottom: 80px;
+	margin-bottom: 30px;
+	height: 360px;
 }
 .agent-hero-img img {
 	padding-top: 0px;
 	object-fit: contain;
-	height: 410px;
+	height: 360px;
 	width: 100%;
 	opacity: 0.3;
 }
@@ -2896,7 +2898,7 @@ footer {
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 100px 100px;
+	padding: 0px 100px;
 	margin-bottom: 100px;
 }
 
