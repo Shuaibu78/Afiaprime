@@ -2854,7 +2854,7 @@ footer {
 .agent-hero-img {
 	position: relative;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	height: 360px;
 }
 .agent-hero-img img {
@@ -2881,7 +2881,7 @@ footer {
 
 .agent-hero-img p {
 	position: absolute;
-	left: 50px;
+	left: 40px;
 	top: 200px;
 	width: 320px;
 	font-family: 'Poppins', sans-serif;
@@ -2981,7 +2981,7 @@ footer {
 	text-align: center;
 	max-width: 400px;
 	width: 100%;
-	height: 305px;
+	height: 325px;
 }
 
 .more-cards h4 {
@@ -3002,7 +3002,7 @@ footer {
 	line-height: 35px;
 	text-align: center;
 	color: #2E2E2E;
-	height: 185px;
+	height: 190px;
 }
 
 .more-cards a {
