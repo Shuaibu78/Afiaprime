@@ -20,11 +20,11 @@ nav{
 	top: 0;
 	left: 0;
 	right: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-	height: 45px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	height: 55px;
 	padding: 20px 100px;
 	z-index: 999;
 }
@@ -1034,11 +1034,12 @@ footer {
 	position: relative;
 	text-align: center;
 	margin-bottom: 100px;
-	height: 1040px
+	height: 1040px;
+	top: 96px;
+	left: 0;
+	right: 0;
 }
 .agent-hero-img img {
-	padding-top: 15px;
-	object-fit: contain;
 	height: 1027px;
 	width: 100%;
 	opacity: 0.3;
@@ -1109,7 +1110,7 @@ footer {
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 30px;
-	padding-top: 25px;
+	padding: 25px 0;
 	text-align: center;
 	color: #2E2E2E;
 }
@@ -1120,8 +1121,10 @@ footer {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 30px;
-	padding-top: 30px;
-	color: #006BB3;
+	padding: 16px 28px;
+	background-color: #006BB3;
+	color: #ffffff;
+	border-radius: 10px;
 	text-decoration: none;
 }
 
@@ -1183,7 +1186,12 @@ footer {
 
 .more-cards a {
 	text-decoration: none;
-	color: #006BB3;
+	background-color: #006BB3;
+	color: #ffffff;
+	border-radius: 10px;
+	height: 20px;
+	display: inline-block;
+	padding: 12px;
 }
 /* end of advert page */
 
@@ -2313,15 +2321,15 @@ nav .search-icon span {
 	}
 	
 .hero-txt a {
-		font-weight: 800;
-		font-size: 24px;
-		line-height: 31px;
-		color: #ffffff;
-		text-decoration: none;
-		background: #006BB3;
-		padding: 12px 24px;
-		box-shadow: 0px 5px 10px #C6E8FF;
-		border-radius: 8px;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 31px;
+	color: #ffffff;
+	text-decoration: none;
+	background: #006BB3;
+	padding: 12px 24px;
+	box-shadow: 0px 5px 10px #C6E8FF;
+	border-radius: 8px;
 }
 
 	.illustration-img {
@@ -2348,10 +2356,6 @@ footer {
 	flex-direction: column;
 	align-items: flex-start;
 	padding-bottom: 30px;
-}
-
-.footer-links a {
-	font-size: 18px !important;
 }
 
 .copyright {
@@ -2389,7 +2393,7 @@ footer {
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 24px;
+	font-size: 16px;
 	line-height: 34px;
 	color: #FFFFFF;
 	text-decoration: none;
@@ -2854,12 +2858,10 @@ footer {
 .agent-hero-img {
 	position: relative;
 	text-align: center;
-	margin-bottom: 10px;
-	height: 360px;
+	height: 380px;
+	top: 73px;
 }
 .agent-hero-img img {
-	padding-top: 0px;
-	object-fit: contain;
 	height: 360px;
 	width: 100%;
 	opacity: 0.3;
@@ -2881,7 +2883,7 @@ footer {
 
 .agent-hero-img p {
 	position: absolute;
-	left: 32px;
+	left: 62px;
 	top: 200px;
 	width: 316px;
 	font-family: 'Poppins', sans-serif;
@@ -2900,6 +2902,7 @@ footer {
 	justify-content: space-between;
 	padding: 0px 100px;
 	margin-bottom: 100px;
+	height: 1500px;
 }
 
 .adsproduct {
@@ -2911,8 +2914,8 @@ footer {
 	box-shadow: 0px 10px 15px #EDF7FE;
 	border-radius: 20px;
 	width: 285px;
-	height: 421px;
 	margin-bottom: 20px;
+	border: 1px solid #006BB3;
 }
 
 .adsproduct h4 {
@@ -2930,9 +2933,9 @@ footer {
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 30px;
-	padding-top: 25px;
+	padding: 12px 0;
 	text-align: center;
 	color: #2E2E2E;
 }
@@ -2941,10 +2944,12 @@ footer {
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 30px;
-	padding-top: 30px;
-	color: #006BB3;
+	padding: 10px 22px;
+	background-color: #006BB3;
+	color: #ffffff;
+	border-radius: 10px;
 	text-decoration: none;
 }
 
@@ -2969,7 +2974,7 @@ footer {
 .all-more-cards {
 	display: inline-block;
 	text-align: center;
-	height: 1830px;
+	height: 1630px;
 	background: url(../img/ads-bg.png);
 	padding: 0 50px;
 	margin-bottom: 50px;
@@ -2988,8 +2993,8 @@ footer {
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 36px;
-	line-height: 49px;
+	font-size: 32px;
+	line-height: 44px;
 	text-align: center;
 	color: #2E2E2E;
 }
@@ -2998,16 +3003,22 @@ footer {
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 28px;
 	text-align: center;
 	color: #2E2E2E;
-	height: 150px;
+	height: 130px;
+	padding: 10px 0;
 }
 
 .more-cards a {
 	text-decoration: none;
-	color: #006BB3;
+	padding: 10px 22px;
+	background-color: #006BB3;
+	color: #ffffff;
+	border-radius: 10px;
+	height: 20px;
+	display: inline-block;
 }
 /* end of advert page */
 }
