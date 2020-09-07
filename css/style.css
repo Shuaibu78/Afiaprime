@@ -44,11 +44,11 @@ div.post-group-name div {
 .faq-container {
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 800px;
     justify-content: space-between;
     align-items: center;
     width: 80vw;
-    margin: auto;
+    margin: auto auto 40px;
 }
 
 .faq-tabs {
@@ -58,23 +58,28 @@ div.post-group-name div {
     align-items: center;
 }
 
-.faq-tabs a {
+.faqLinks {
     text-decoration: none;
     color: #1f7ebd;
     font-weight: bold;
+    background-color: #fff;
+    border: none;
     margin-bottom: 120px;
 }
 
-.faq-tabs a:active {
+.faqActive {
     color: #000000;
     text-decoration: none;
     border-bottom: 4px solid #006bb3;
 }
 
+
 .faq-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10%;
+    height: 500px;
+    width: 90%;
 }
 
 .faq-content div {
@@ -95,8 +100,12 @@ div.post-group-name div {
     font-weight: 500;
 }
 
-span.read-more {
+.opaque {
     color: rgb(179, 179, 179);
+}
+
+.readMore {
+    display: none;
 }
 
 .load-more {
@@ -106,6 +115,11 @@ span.read-more {
     padding: 13px;
     margin-top: 70px;
     margin-bottom: 70px;
+}
+
+.readMoreBtn {
+    background-color: #fff;
+    border: none;
 }
 
 section.blog-hero {
@@ -880,6 +894,7 @@ button:focus {
         justify-content: center;
         align-items: center;
         height: 200px;
+        margin-top: 30px;
     }
     .faq-tabs {
         display: grid;
@@ -939,6 +954,88 @@ button:focus {
     .form-description p {
         font-size: 12px;
         width: 90%;
+    }
+
+    .faq-container {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        justify-content: space-between;
+        align-items: center;
+        width: 80vw;
+        margin: auto auto 40px;
+    }
+    
+    .faq-tabs {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .faqLinks {
+        text-decoration: none;
+        color: #1f7ebd;
+        font-weight: bold;
+        background-color: #fff;
+        border: none;
+        margin-bottom: 120px;
+    }
+    
+    .faqActive {
+        color: #000000;
+        text-decoration: none;
+        border-bottom: 4px solid #006bb3;
+    }
+    
+    
+    .faq-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10%;
+        height: 500px;
+        width: 90%;
+        margin-top: -200px;
+    }
+    
+    .faq-content div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .faq-content h2 {
+        font-size: 18px;
+        line-height: 1.2rem;
+        padding-bottom: 13px;
+    }
+    
+    .faq-content p {
+        font-size: 15px;
+        line-height: 1.1rem;
+        width: 74%;
+        font-weight: 500;
+    }
+    
+    .opaque {
+        color: rgb(179, 179, 179);
+    }
+    
+    .readMore {
+        display: none;
+    }
+    
+    .load-more {
+        border: 2px solid;
+        color: #006bb3;
+        border-radius: 30px;
+        padding: 13px;
+        margin-bottom: 70px;
+    }
+    
+    .readMoreBtn {
+        background-color: #fff;
+        border: none;
+        margin-top: -50px;
     }
 }
 

@@ -1,72 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog page</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-    <title>FAQ</title>
+    <!-- <link rel="stylesheet" href="blog.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Place favicon.ico in the root directory -->
 
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
-</head>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-<body>
-
+  <body>
     <!--  Nav-->
-    <section>
-        <nav>
+    <nav id="nav" class="navbar">
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+      </div>
 
-        </nav>
-    </section>
+      <div class="logo">
+        <a href="./index.html">
+          <img
+            src="./img/afiaprime-logo.png"
+            alt="afiaprime-logo"
+            class="nav__logo"
+          />
+        </a>
+      </div>
+
+      <div class="search-icon">
+        <span class="fas fa-search"></span>
+      </div>
+
+      <div class="cancel-icon">
+        <span class="fas fa-times"></span>
+      </div>
+
+      <div class="nav-items">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./signin.html">sign In</a></li>
+        <li><a href="./signup.html" class="sign-btn">Sign Up</a></li>
+      </div>
+    </nav>
 
     <!--  Faq hero-->
     <section class="hero-faq">
-
-        <h2>Have Any Questions?</h2>
-
+      <h2>Have Any Questions?</h2>
     </section>
 
     <!-- Faq Tabs -->
     <section class="faq-container">
+      <div class="faq-tabs">
+        <button
+          class="faqLinks "
+          onclick="ClickedTab(event, 'General')"
+          id="defaultOpen">
+          General
+        </button>
+        <button class="faqLinks " onclick="ClickedTab(event, 'Posters')">
+          Posters
+        </button>
+        <button class="faqLinks " onclick="ClickedTab(event, 'Shipping')">
+          Shipping
+        </button>
+        <button class="faqLinks " onclick="ClickedTab(event, 'Refunds')">
+          Refunds
+        </button>
+        <button class="faqLinks " onclick="ClickedTab(event, 'Returns')">
+          Returns
+        </button>
+      </div>
 
-        <div class="faq-tabs">
-            <a href="#" active>General</a>
-            <a href="#">Posters</a>
-            <a href="#">Shipping</a>
-            <a href="#">Refunds</a>
-            <a href="#">Returns</a>
+      <div id="General" class="faq-content">
+        <div class="content">
+          <h2>What is our Shipping policy?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            <span id="opaque" class="opaque">
+              iusto dolores id itaque illum neque numquam voluptas ullam Lorem
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <span id="more" class="readMore">
+              iusto dolores id itaque illum neque numquam voluptas ullam
+              possimus quo quasi. Molestias minus fugit qui excepturi vel. Velit, 
+              accusantium laboriosam sunt modi quos neque! Natus quasi facere, cum 
+              dignissimos labore nesciunt fugit laborum.
+            </span>
+          </p>
         </div>
 
-        <div class="faq-content">
-            <div class="content-left">
-                <h2>What is our Shipping policy?</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
-                   <span class="read-more"> iusto dolores id itaque illum neque numquam voluptas ullam possimus quo quasi.</span></p>
-            </div>
-
-            <div class="content-right">
-                <h2>Can i change the color of the product?</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
-                    <span class="read-more"> iusto dolores id itaque illum neque numquam voluptas ullam possimus quo quasi.</span></p>
-            </div>
-
+        <div class="content">
+          <h2>Can i change the color of the product?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            <span id="opaque1" class="opaque">
+              iusto dolores id itaque illum neque numquam voluptas ullam Lorem
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <span id="more1" class="readMore">
+              iusto dolores id itaque illum neque numquam voluptas ullam
+              possimus quo quasi. Molestias minus fugit qui excepturi vel. Velit, 
+              accusantium laboriosam sunt modi quos neque! Natus quasi facere, cum 
+              dignissimos labore nesciunt fugit laborum.
+            </span>
+          </p>
         </div>
-        <!-- The See More Icon -->
-        <i class="load-more fa fa-chevron-down" aria-hidden="true"></i>
-        
+      </div>
 
+      <div id="Posters" class="faq-content">
+        <div class="content-left">
+          <h2>What is our Shipping policy?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            <span class="read-more">
+              iusto dolores id itaque illum neque numquam voluptas ullam
+              possimus quo quasi.</span
+            >
+          </p>
+        </div>
 
+        <div class="content-right">
+          <h2>Can i change the color of the product?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            <span class="read-more">
+              iusto dolores id itaque illum neque numquam voluptas ullam
+              possimus quo quasi.</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div id="Shipping" class="faq-content">
+        <div class="content-left">
+          <h2>What is our Shipping policy?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            <span class="read-more">
+              iusto dolores id itaque illum neque numquam voluptas ullam
+              possimus quo quasi.</span
+            >
+          </p>
+        </div>
+
+        <div class="content-right">
+          <h2>Can i change the color of the product?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            <span class="read-more">
+              iusto dolores id itaque illum neque numquam voluptas ullam
+              possimus quo quasi.</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div id="Refunds" class="faq-content">
+        <div class="content-left">
+          <h2>What is our Shipping policy?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            <span class="read-more">
+              iusto dolores id itaque illum neque numquam voluptas ullam
+              possimus quo quasi.</span
+            >
+          </p>
+        </div>
+
+        <div class="content-right">
+          <h2>Can i change the color of the product?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            <span class="read-more">
+              iusto dolores id itaque illum neque numquam voluptas ullam
+              possimus quo quasi.</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div id="Returns" class="faq-content">
+        <div class="content-left">
+          <h2>What is our Shipping policy?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            <span class="read-more">
+              iusto dolores id itaque illum neque numquam voluptas ullam
+              possimus quo quasi.</span
+            >
+          </p>
+        </div>
+
+        <div class="content-right">
+          <h2>Can i change the color of the product?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            <span class="read-more">
+              iusto dolores id itaque illum neque numquam voluptas ullam
+              possimus quo quasi.</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- The See More Icon -->
+      <button class="readMoreBtn">
+        <i
+          onclick="readMore()"
+          id="myBtn"
+          class="load-more fa fa-chevron-down"
+          aria-hidden="true"
+        ></i>
+      </button>
     </section>
 
-    <!-- Add Footer here -->
+    <!-- Footer here -->
     <footer>
-
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="#">Sell products on Afiaprime</a>
+          <a href="#">Chat with an Agent</a>
+          <a href="#">Ratings</a>
+          <a href="#">Advertise Products</a>
+          <a href="#">About us</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="footer-links">
+          <a href="#">Blogs</a>
+          <a href="#">Careers</a>
+          <a href="#">Help and Support</a>
+          <a href="#">Your Account</a>
+          <a href="#">Your Orders</a>
+          <a href="#">Replacements</a>
+        </div>
+        <div class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy and policy</a>
+          <a href="#">Map</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <div>
+          ©<span id="copyyear"></span>, Afiaprime.com All rights reserved.
+        </div>
+        <div>
+          <a href="#">Privacy and Terms policy</a>
+        </div>
+      </div>
     </footer>
 
-
-
-</body>
-
+    <script src="./js/main.js"></script>
+  </body>
 </html>
