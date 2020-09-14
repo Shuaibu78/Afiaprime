@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>2FA page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <!-- google font and font-awesome CDN-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Place favicon.ico in the root directory -->
+
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body style="background: #FFF;">
+    <header class="landing-header">
+        <nav id="nav" class="navbar" style="padding: 16px 40px;">    
+            <div class="logo">
+                <a href="./index.html">
+                    <img 
+                        src="./img/afiaprime-logo.png" 
+                        alt="afiaprime-logo"
+                        class="nav__logo"
+                    >
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="two-step-verification">
+        <div class="two-step-header">
+            <img src="./img/mobile-marketing.png" alt="two-step-verification">
+            <h2>Two-step verification</h2>
+            <p>Thanks for keeping your account Secure, Check your mobile device: <span>(xxx)-xxx-0099</span></p>    
+        </div>
+        <form class="two-step-body">
+            <div class="code">
+                <label for="code">Your Verification Code</label>
+                <input type="number" name="code" id="" placeholder="6-digit code">  
+            </div>
+            <div class="trusted-check">
+                <input type="checkbox" name="trusted" id="">
+                <p>This is trusted device, don't ask again</p>
+            </div>
+            <button type="submit">Sign in Securely</button>
+        </form>
+        <a href="#" class="cancel">Cancel</a>
+    </section>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

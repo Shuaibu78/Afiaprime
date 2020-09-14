@@ -44,11 +44,11 @@ div.post-group-name div {
 .faq-container {
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 400px;
     justify-content: space-between;
     align-items: center;
     width: 80vw;
-    margin: auto auto 40px;
+    margin: auto auto 4rem;
 }
 
 .faq-tabs {
@@ -78,7 +78,6 @@ div.post-group-name div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10%;
-    height: 500px;
     width: 90%;
 }
 
@@ -962,13 +961,13 @@ button:focus {
         height: 600px;
         justify-content: space-between;
         align-items: center;
-        width: 80vw;
+        width: 96vw;
         margin: auto auto 40px;
     }
     
     .faq-tabs {
         display: flex;
-        width: 90%;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
     }
