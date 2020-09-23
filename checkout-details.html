@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Approved & panding Agents</title>
+    <title>checkout-delivery</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -143,7 +143,13 @@
             <p>- Cheaper delivery fees</p>
             <p>- Scheduled pickup at your own convenience</p>
         </div>
-        <h3>SELECT PICKUP STATION</h3>
+        <button id="myModalBtn">SELECT PICKUP STATION</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
         <div class="shipment-details">
             <hr style="color: #6D726C;">
             <h6>SHIPMENT DETAILS</h6>
@@ -154,16 +160,20 @@
             <p>Delivered between Tuesday 18 Aug and Wednesday 26 Aug</p>
         </div>
         <div class="total">
-            <hr>
-            <p class="align-left">Subtotal</p>
-            <p class="align-right">$4.30</p>
-            <p class="align-left">Delivery fee</p>
-            <p class="align-right">$4.30</p> 
-            <hr>
+            <hr class="opa-hr">
+            <div class="align-top">
+                <p class="align-left">Subtotal</p>
+                <p class="align-right">$4.30</p> 
+            </div>
+            <div class="align-bottom">
+                <p class="align-left">Delivery fee</p>
+                <p class="align-right">$4.30</p> 
+            </div>
+            <hr class="opa-hr">
         </div>
         <div class="next-step">
             <p>You will be able to add a voucher in the next step</p>
-            <a href="#">PROCEED TO NEXT STEP</a>
+            <a href="./checkout-payment.html">PROCEED TO NEXT STEP</a>
         </div>
     </section>
 

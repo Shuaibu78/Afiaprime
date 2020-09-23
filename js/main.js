@@ -41,6 +41,27 @@ searchBtn.onclick = ()=>{
 let copyRightYear = document.getElementById('copyyear')
 copyRightYear.appendChild(document.createTextNode(new Date().getFullYear()))
 
+// modal
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("myModalBtn");
+var close = document.getElementsByClassName("close")[0];
+
+// opening
+btn.onClick = function() {
+  modal.style.display = "flex";
+}
+
+// closing
+close.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 // tabchanges
 const openTab = (evt, evtName) => {
