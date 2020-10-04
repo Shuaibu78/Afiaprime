@@ -1064,11 +1064,132 @@ footer {
 }
 .chat-bot {
   position: fixed;
-  top: 30%;
-  left: 80%;
+  bottom: 10%;
+  right: 4%;
   width: 100px;
   height: 150px;
   cursor: pointer;
+  opacity: 0.8;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 5%;
+  border: 1px solid #f1f1f1;
+  z-index: 999;
+  max-width: 300px;
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 350px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 100%;
+}
+
+.profile-chat {
+  width: 40px;
+  height: 40px;
+}
+
+.profile-cat {
+  width: 25px;
+  height: 25px;
+}
+
+.chat-header {
+  width: 100%;
+  background-color: #006BB3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+}
+
+.chat-header h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  background: #fff;
+  height: 50px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .cancel {
+  background-color:  #006BB3;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.container-chat {
+  border: 1px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 10px 0;
+  width: 80%;
+}
+
+.container-chat p {
+  font-size: 12px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Darker chat container */
+.darker-chat {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.container-chat::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container-chat img {
+  float: left;
+  max-width: 30px;
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container-chat img.right {
+  float: right;
+  margin-left: 10px;
+  margin-right:0;
 }
 
 /* end of vendo's page */
@@ -2513,6 +2634,35 @@ footer {
 }
 
 /* end of buy-product page */
+
+/* start of upload page */
+
+  .upload-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .upload-container h4 {
+    align-self: flex-start;
+  }
+
+  .upload-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+
+  .upload {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* end of start page */
 
 
 /* media queries */

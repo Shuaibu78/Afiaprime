@@ -41,27 +41,27 @@ searchBtn.onclick = ()=>{
 let copyRightYear = document.getElementById('copyyear')
 copyRightYear.appendChild(document.createTextNode(new Date().getFullYear()))
 
-// modal
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("myModalBtn");
-var close = document.getElementsByClassName("close")[0];
+// // modal
+// let modal = document.getElementById("myModal");
+// let btn = document.getElementById("myModalBtn");
+// var close = document.getElementsByClassName("close")[0];
 
-// opening
-btn.onClick = function() {
-  modal.style.display = "flex";
-}
+// // opening
+// btn.onClick = function() {
+//   modal.style.display = "flex";
+// }
 
-// closing
-close.onclick = function() {
-  modal.style.display = "none";
-}
+// // closing
+// close.onclick = function() {
+//   modal.style.display = "none";
+// }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
 
 // tabchanges
 const openTab = (evt, evtName) => {
@@ -96,7 +96,8 @@ const ClickedTab = (evt, evtName) => {
   
     document.getElementById(evtName).style.display = "grid";
     evt.currentTarget.className += "faqActive";
-}
+};
+
 document.getElementById("defaultOpen").click();
 
 const readMore = () => {
@@ -116,4 +117,16 @@ const readMore = () => {
       more.style.display = "grid";
       more1.style.display = "grid";
     }
-  } 
+  };
+
+
+function openForm () {
+  document.getElementById("myForm").style.display = "block";
+  document.getElementById("closeImg").style.display = "none";
+}
+  
+function closeForm (){
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById("closeImg").style.display = "block";
+
+}

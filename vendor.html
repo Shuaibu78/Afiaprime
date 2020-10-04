@@ -420,7 +420,37 @@
     </div>
   </div>
 
-  <img class="chat-bot" src="./img/chat.png" alt="chat-bot">
+  <img class="chat-bot" onclick="openForm()"  id="closeImg" src="./img/chat.png" alt="chat-bot">
+
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <div class="chat-header">
+        <img src="./img/chat-img1.png" class="profile-chat" alt="chat">
+        <h6>Incredible Fits</h6>
+        <img src="./img/Category.png" class="profile-cat" alt="message category">
+      </div>  
+
+      <div class="container-chat">
+        <img src="./img/chat-img.png" alt="Avatar">
+        <p>Hello. How are you today?</p>
+      </div>
+      
+      <div class="container-chat darker-chat">
+        <img src="./img/chat-img1.png" alt="Avatar" class="right">
+        <p>Hey! I'm fine. Thanks for asking!</p>
+      </div>
+      
+      <div class="container-chat">
+        <img src="./img/chat-img.png" alt="Avatar">
+        <p>Sweet! So, what do you wanna do today?</p>
+      </div>
+
+      <input placeholder="Type message.." name="msg" required></input>
+  
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
 
   <footer>
     <div class="footer-container">
